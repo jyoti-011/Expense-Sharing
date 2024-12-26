@@ -1,0 +1,199 @@
+.create-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#569f58, #bccc9f);
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.app-name {
+  font-size: 2rem;
+  color: #939303; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.app-name:hover {
+  text-decoration: underline; 
+}
+.card {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.member-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remove-member-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-member-btn:hover {
+  background-color: #d32f2f;
+}
+
+.add-member-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-member-btn:hover {
+  background-color: #388e3c;
+}
+
+.create-group-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.create-group-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .create-group-btn,
+  .add-member-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input,
+  select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .remove-member-btn {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-group {
+    padding: 15px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .create-group-btn,
+  .add-member-btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  input,
+  select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 60%;
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .create-group-btn {
+    font-size: 1.2rem;
+    padding: 14px 28px;
+  }
+}

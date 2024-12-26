@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+Expense Sharing App
+An intuitive web application for splitting and tracking shared expenses among a group of people. This app simplifies managing payments, calculates debts, and ensures transparency in expense sharing.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+1.Features
+2.Widgets/Algorithms Used
+3.Technologies Used
+4.Setup Instructions
+5.Usage
 
-## Available Scripts
+1.Features
+Group Management: Create, manage, and delete groups of members.
+Expense Tracking: Add, edit, or delete payments made within the group.
+Debt Calculation: Automatically calculate and display how much each member owes or is owed.
+User-Friendly UI: Responsive design with interactive components for seamless user experience.
+Persistent Storage: Data is stored locally to retain state across sessions.
 
-In the project directory, you can run:
+2.Widgets/Algorithms Used
+Debt Calculation Algorithm:
+Determines who owes whom and how much by calculating balances based on payments.
 
-### `npm start`
+Dropdown and Checkbox Widgets:
+Dropdown for selecting the payer and checkboxes for selecting beneficiaries.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dynamic State Management:
+Leveraged React's useState and useEffect hooks for handling state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Persistent Data Storage:
+Utilizes localStorage to store group and payment details.
 
-### `npm test`
+Validation Algorithm:
+Ensures all required fields are filled before allowing payment addition or modification.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive Design:
+Styled with CSS to ensure the app is visually appealing across devices.
 
-### `npm run build`
+3.Technologies Used
+Frontend:
+React.js (with React Router for navigation)
+HTML5, CSS3
+Icons from react-icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Other Tools:
+canvas-confetti for visual effects on group creation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4.Setup Instructions
+Prerequisites
+Node.js and npm installed on your machine.
+A code editor like Visual Studio Code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Steps:
+ 1.Download the zip file:
+ cd expense-sharing-app
+ cd frontend
+ 2.Install dependencies:
+ npm install
+ 3.Start the app:
+ npm start
+ 4.Open the app in your browser at:
+ http://localhost:3000
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5.Usage
+1.Create a Group:
+Start by creating a group and adding its members.
+2.Add Payments:
+Record payments made by group members, including the amount, purpose, and beneficiaries.
+3.View Debt Summary:
+See how much each member owes or is owed in real-time.
+4.Modify Data:
+Edit or delete payments as needed.

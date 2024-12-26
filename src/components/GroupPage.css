@@ -1,0 +1,197 @@
+.group-page {
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(#569f58, #bccc9f); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-name {
+  font-size: 2.5rem;
+  color: #2e8b57; 
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.group-card {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff; 
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+.group-details h1 {
+  font-size: 2rem;
+  color: #556b2f; 
+  margin-bottom: 10px;
+}
+
+.group-details h3 {
+  font-size: 1.5rem;
+  color: #6b8e23; 
+  margin-bottom: 10px;
+  background-color: rgba(182, 205, 159, 0.4); 
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.group-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group-details li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: rgba(111, 143, 93, 0.2); 
+  color: #2e4c2f;
+  border: 2px solid #6b8e23; 
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.group-details li:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-history,
+.debt-summary {
+  margin-top: 20px;
+}
+
+.payment-history ul,
+.debt-summary ul {
+  padding: 0;
+}
+
+.payment-history li,
+.debt-summary li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: rgba(182, 205, 159, 0.2);
+  padding: 10px;
+  border-radius: 6px;
+  color: #6b8e23;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.payment-history li span,
+.debt-summary li span {
+  color: #333;
+  font-weight: bold;
+}
+
+.debt-summary li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.edit-delete-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-delete-btns button {
+  background-color: #f4a261; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-delete-btns button:hover {
+  background-color: #e76f51; 
+}
+
+.no-records {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-payment-btn,
+.see-details-btn {
+  background-color: #6b8e23;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.add-payment-btn:hover,
+.see-details-btn:hover {
+  background-color: #556b2f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .group-card {
+    padding: 15px;
+  }
+
+  .add-payment-btn,
+  .see-details-btn {
+    padding: 10px 20px;
+  }
+
+  .group-details h1 {
+    font-size: 1.8rem;
+  }
+
+  .group-details h3 {
+    font-size: 1.2rem;
+  }
+}

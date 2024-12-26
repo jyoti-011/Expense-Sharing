@@ -1,0 +1,89 @@
+.group-created-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#569f58, #bccc9f);
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; 
+}
+
+.content {
+  text-align: center;
+  animation: fadeInContent 1s ease-in-out;
+  background-color: #c4eba1; 
+  padding: 40px 30px;
+  border-radius: 50px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.group-created-message {
+  font-size: 3rem;
+  color: #556b2f;
+  margin-bottom: 20px;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.go-to-group-page-btn {
+  background-color: #808000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  opacity: 0; 
+  animation: fadeInButton 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.go-to-group-page-btn:hover {
+  background-color: #6b8e23; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .group-created-message {
+    font-size: 2rem;
+  }
+
+  .go-to-group-page-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
