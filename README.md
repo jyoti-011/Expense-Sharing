@@ -1,4 +1,4 @@
-Expense Sharing App
+Expense Sharing App:
 An intuitive web application for splitting and tracking shared expenses among a group of people. This app simplifies managing payments, calculates debts, and ensures transparency in expense sharing.
 
 Table of Contents
